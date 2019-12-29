@@ -1,9 +1,10 @@
 import React from 'react';
 import '../css/App.css';
+import { Link } from 'react-router-dom';
 
 const Login = () => {
   return (
-    <div className="MyInfo">
+    <div className="Menbong">
       <h2>로그인</h2>
       <form>
         <table>
@@ -18,7 +19,7 @@ const Login = () => {
         </table>
       </form>
       <br></br>
-      <button>로그인</button>
+      <button><Link to="/main">로그인</Link></button>
     </div>
   );
 }

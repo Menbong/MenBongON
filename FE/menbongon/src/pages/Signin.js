@@ -3,7 +3,7 @@ import '../css/App.css';
 
 const Signin = () => {
   return (
-    <div className="MyInfo">
+    <div className="Menbong">
       <h2>회원가입</h2>
       <form>
         <table>
