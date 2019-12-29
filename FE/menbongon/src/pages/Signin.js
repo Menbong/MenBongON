@@ -20,6 +20,13 @@ const Signin = () => {
             <td><input name="user_name"/></td>
           </tr>
           <tr>
+            <td>회원유형</td>
+            <td><select name="fruit">
+              <option value="mentee">멘티(학생)</option>
+              <option value="mento">멘토(대학생)</option>
+            </select></td>
+          </tr>
+          <tr>
             <td>학교</td>
             <td><input name="school"/></td>
           </tr>
