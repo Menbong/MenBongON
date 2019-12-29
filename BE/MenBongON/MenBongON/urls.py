@@ -16,10 +16,10 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import include, path
 from rest_framework import routers
-import post.views 
+import menbongUser.views 
 
 router = routers.DefaultRouter()
-router.register('posts', post.views.PostViewset)
+router.register('myinfo', menbongUser.views.MyInfoView)
 
 urlpatterns = [
     path('admin/', admin.site.urls),
