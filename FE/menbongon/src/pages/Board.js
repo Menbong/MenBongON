@@ -1,6 +1,7 @@
 import React from 'react';
 import '../css/App.css';
 import api from '../api';
+import PostView from '../Components/PostView'
 
 class Board extends React.Component {
   constructor(props) {
@@ -9,7 +10,18 @@ class Board extends React.Component {
       title: '',
       content: '',
       password: '',
+      allPosts: [],
     }
+  }
+
+  componentDidMount() {
+    this.getPosts()
+  }
+
+  async getPosts(){
+    const results = await api.getAllPosts()
+    this.setState({allPosts: results.data})
+    console.log(results)
   }
   
   handlingChange = (event) => {
@@ -46,8 +58,12 @@ class Board extends React.Component {
             <button type="submit">제출하기</button>
           </form>
         </div>
-        <div className="Detail">
-  
+        <div className="List">
+          {
+            this.state.allPosts.map((post) =>
+            <PostView key={post.id} id={post.id} title={post.title} content={post.content} password={post.password}/>
+            )
+          }
         </div>
       </div>  
     );
