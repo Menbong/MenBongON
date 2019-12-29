@@ -4,21 +4,40 @@ import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="MyInfo">
+      <h2>마이페이지</h2>
+      <table>
+        <tr>
+          <td>아이디</td>
+          <td>id</td>
+        </tr>
+        <tr>
+          <td>비밀번호</td>
+          <td>pw</td>
+        </tr>
+        <tr>
+          <td>이름</td>
+          <td>name</td>
+        </tr>
+        <tr>
+          <td>학교</td>
+          <td>school</td>
+        </tr>
+        <tr>
+          <td>이메일</td>
+          <td>email</td>
+        </tr>
+        <tr>
+          <td>전공</td>
+          <td>major</td>
+        </tr>
+        <tr>
+          <td>전화번호</td>
+          <td>phonenumber</td>
+        </tr>
+      </table>
+      <br></br>
+      <button>수정하기</button>
     </div>
   );
 }
