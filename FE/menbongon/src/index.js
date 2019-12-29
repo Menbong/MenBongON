@@ -3,6 +3,9 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
+export { default as Home } from './pages/Home';
+export { default as Signin } from './pages/Signin';
+export { default as Login } from './pages/Login';
 
 ReactDOM.render(<App />, document.getElementById('root'));
 

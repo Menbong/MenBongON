@@ -1,45 +1,42 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+// import React, { Component } from 'react';
+// import { Route } from 'react-router-dom';
+// import Home from './pages/Home.js';
+// import Login from './pages/Login.js';
+// import Signin from './pages/Signin.js';
 
-function App() {
+// class App extends Component {
+//   render(){
+//      return (
+//       <div>
+//         <Route exact path="/" component={Home}/>
+//         <Route path="/login" component={Login}/>
+//         <Route path="/signin" component={Signin}/>
+//       </div>
+//     );
+//   }
+ 
+// }
+
+// export default App;
+
+import * as React from 'react';
+import { BrowserRouter, Route, Switch, Redirect } from 'react-router-dom';
+import Home from './pages/Home.js';
+import Login from './pages/Login.js';
+import Signin from './pages/Signin.js';
+
+const Router = () => {
   return (
-    <div className="MyInfo">
-      <h2>마이페이지</h2>
-      <table>
-        <tr>
-          <td>아이디</td>
-          <td><input value="id"/></td>
-        </tr>
-        <tr>
-          <td>비밀번호</td>
-          <td><input value="pw"/></td>
-        </tr>
-        <tr>
-          <td>이름</td>
-          <td><input value="name"/></td>
-        </tr>
-        <tr>
-          <td>학교</td>
-          <td><input value="school"/></td>
-        </tr>
-        <tr>
-          <td>이메일</td>
-          <td><input value="email"/></td>
-        </tr>
-        <tr>
-          <td>전공</td>
-          <td><input value="major"/></td>
-        </tr>
-        <tr>
-          <td>전화번호</td>
-          <td><input value="phone"/></td>
-        </tr>
-      </table>
-      <br></br>
-      <button>수정하기</button>
-    </div>
+    <BrowserRouter>
+      <Switch>
+        <Route exact={true} path="/" component={Home} />
+        <Route path="/login" component={Login} />
+        <Route path="/singin" component={Signin} />
+        {/* Not Found */}
+        <Route component={() => <Redirect to="/" />} />
+      </Switch>
+    </BrowserRouter>
   );
-}
+};
 
-export default App;
+export default Router;
