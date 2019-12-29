@@ -9,31 +9,31 @@ function App() {
       <table>
         <tr>
           <td>아이디</td>
-          <td>id</td>
+          <td><input value="id"/></td>
         </tr>
         <tr>
           <td>비밀번호</td>
-          <td>pw</td>
+          <td><input value="pw"/></td>
         </tr>
         <tr>
           <td>이름</td>
-          <td>name</td>
+          <td><input value="name"/></td>
         </tr>
         <tr>
           <td>학교</td>
-          <td>school</td>
+          <td><input value="school"/></td>
         </tr>
         <tr>
           <td>이메일</td>
-          <td>email</td>
+          <td><input value="email"/></td>
         </tr>
         <tr>
           <td>전공</td>
-          <td>major</td>
+          <td><input value="major"/></td>
         </tr>
         <tr>
           <td>전화번호</td>
-          <td>phonenumber</td>
+          <td><input value="phone"/></td>
         </tr>
       </table>
       <br></br>

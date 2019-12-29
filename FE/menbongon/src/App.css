@@ -4,6 +4,7 @@ table {
   border-top: 1px solid #444444;
   border-collapse: collapse;
 }
+
 th, td {
   border-bottom: 1px solid #444444;
   padding: 10px;
@@ -11,6 +12,8 @@ th, td {
 }
 
 .MyInfo {
+  padding-left: 20%;
+  padding-right: 20%;
   text-align: center;
   background-color: #282c34;
   min-height: 100vh;
@@ -34,10 +37,12 @@ button{
   transition:800ms ease all;
   outline:none;
 }
+
 button:hover{
   background:#fff;
   color:#1AAB8A;
 }
+
 button:before,button:after{
   content:'';
   position:absolute;
@@ -48,13 +53,27 @@ button:before,button:after{
   background: #1AAB8A;
   transition:400ms ease all;
 }
+
 button:after{
   right:inherit;
   top:inherit;
   left:0;
   bottom:0;
 }
+
 button:hover:before,button:hover:after{
   width:100%;
   transition:800ms ease all;
+}
+
+h2{
+  color:#1AAB8A;
+}
+
+input{
+  height: auto;
+  line-height: normal;
+  padding: .8em .5em;
+  border: 1px solid #1AAB8A;
+  border-radius: 4px;
 }
