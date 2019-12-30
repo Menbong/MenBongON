@@ -14,4 +14,17 @@ export default {
        return axios.patch('/myinfo/'+String(id), data)
    },
 
+   // 모든 게시글 불러오기
+   getAllPosts() {
+       return axios.get('/posts/')
+   },
+
+   // 글 작성하기
+   createPost(data) {
+       return axios.post('/posts/', data)
+   },
+
+   deletePost(id) {
+       return axios.delete('/posts/'+String(id))
+   }
 }
