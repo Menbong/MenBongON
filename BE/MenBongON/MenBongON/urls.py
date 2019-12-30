@@ -19,7 +19,7 @@ from rest_framework import routers
 import menbongUser.views 
 
 router = routers.DefaultRouter()
-router.register('myinfo', menbongUser.views.MyInfoView)
+router.register('menbonguser', menbongUser.views.MenbongUserView)
 
 urlpatterns = [
     path('admin/', admin.site.urls),
